@@ -14,3 +14,14 @@ Source: https://www.dropbox.com/developers/reference/content-hash
 Simply edit `conf-sample.py` to contain the proper api/secrets/tokens and then rename it to `conf.py`.
 
 Note: The tokens in `conf-sample.py` were generated randomly.
+
+Running on Docker:
+```
+docker build -t dropbox .
+docker run --rm -it dropbox
+```
+
+Without Docker:
+```
+python client.py
+```
